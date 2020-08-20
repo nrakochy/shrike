@@ -13,13 +13,16 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
+    "theme-ui": "^0.3.1",
     "typescript": "^3.7.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +38,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@storybook/addon-actions": "^6.0.13",
+    "@storybook/addon-essentials": "^6.0.13",
+    "@storybook/addon-links": "^6.0.13",
+    "@storybook/node-logger": "^6.0.13",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^6.0.13",
+    "@types/theme-ui": "^0.3.6",
+    "babel-loader": "^8.1.0",
+    "fork-ts-checker-webpack-plugin": "^5.1.0",
+    "prettier": "^2.0.5",
+    "react-is": "^16.13.1",
+    "ts-loader": "^8.0.2"
   }
 }
