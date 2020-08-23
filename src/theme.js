@@ -18,9 +18,11 @@ export const theme = {
   },
   colors: {
     text: "#000",
-    background: "#fff",
-    primary: "#07c",
-    secondary: "#30c",
+    background: "#f0f8fa",
+    primary: "#55BDCA",
+    secondary: "#022449",
+    accent: "#F27D42",
+    highlight: "#96FFFF",
     muted: "#f6f6f6",
   },
   text: {
@@ -86,3 +88,13 @@ export const theme = {
     },
   },
 };
+
+export function getThemeEntry(k) {
+  const target = theme[k];
+  if (!target) {
+    throw Error(
+      `Invoked a bad key name which does not exist in the theme object ${k}`
+    );
+  }
+  return target;
+}

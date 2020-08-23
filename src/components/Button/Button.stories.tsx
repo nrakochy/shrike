@@ -17,6 +17,24 @@ const Template: Story<ButtonProps> = (args) => {
 
 export const Primary = Template.bind({});
 Primary.args = {
-  label: "Button",
+  label: "Primary",
+  bg: "primary",
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  label: "Secondary",
   bg: "secondary",
+};
+
+export const Highlight = Template.bind({});
+Highlight.args = {
+  label: "Highlight",
+  bg: "highlight",
+};
+
+export const Background = Template.bind({});
+Background.args = {
+  label: "Background",
+  bg: "background",
 };
