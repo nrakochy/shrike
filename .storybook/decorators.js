@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeProvider } from "emotion-theming";
+import { ThemeProvider } from "theme-ui";
 import { theme } from "../src/theme";
 
 const withThemeProvider = (Story, context) => {
